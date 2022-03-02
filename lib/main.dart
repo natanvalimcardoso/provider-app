@@ -1,8 +1,16 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
-import 'package:provider/screens/formulario_transferencia.dart';
-import 'package:provider/screens/lista_transferencia.dart';
-void main(){
-  runApp(const MyApp());
+import 'package:provider/provider.dart';
+import 'package:providers/model/saldo.dart';
+import 'package:providers/screens/tranferencia/formulario_transferencia.dart';
+import 'package:providers/screens/tranferencia/lista_transferencia.dart';
+
+void main() {
+  runApp(ChangeNotifierProvider(
+    create: (context) => Saldo(valor: 0),
+    child: MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -26,7 +34,8 @@ class MyApp extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (context) => const ListaTransferencia(),
-          '/formularioTransferencias': (context) => const FormularioTransferencias(),
+          '/formularioTransferencias': (context) =>
+              const FormularioTransferencias(),
         });
   }
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 
-import '../../components/text_field_component.dart';
-import '../model/transferencia.dart';
+import '../../../components/text_field_component.dart';
+import '../../model/transferencia.dart';
 
 class FormularioTransferencias extends StatefulWidget {
   const FormularioTransferencias({Key? key}) : super(key: key);

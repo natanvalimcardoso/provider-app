@@ -1,7 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
-import '../components/card_item_transferencia.dart';
-import '../model/transferencia.dart';
+import '../../components/card_item_transferencia.dart';
+import '../../model/transferencia.dart';
+import '../../model/transferencia.dart';
 import 'formulario_transferencia.dart';
 
 class ListaTransferencia extends StatefulWidget {
